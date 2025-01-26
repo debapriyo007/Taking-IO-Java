@@ -129,11 +129,6 @@ public class CompetitiveProgrammingSolution {
 3. **solveProblem**: The main logic for solving the competitive programming problem goes here.
 
 
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
 ## Acknowledgments
 
 - Java community for the efficient `BufferedReader` and `BufferedWriter` classes.
