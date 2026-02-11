@@ -1,141 +1,63 @@
-# Competitive Programming I/O In Java
+## About this Repository
+- This Main is accepted on both <b>Codeforces</b> and <b>Codechef</b>.
+- It is designed to be simple and easy to use.
+- It uses <code>BufferedReader</code> and <code>PrintWriter</code> for fast I/O operations.
+- It is structured to handle multiple test cases efficiently.
+- It includes a sample code for addition of two numbers to demonstrate how to use the Main.
 
+## Requirements
+1. <b>Visual Studio Code</b><br>
+2. <b>Java</b><br>
+3. <b>Git (Optional but recommended)</b><br>
+   
+> Note : Always look for latest version available.
 
+## How To Setup ?
+1. Download <code>.vscode</code> folder, <code>Main.java</code>, <code>input.txt</code> and <code>output.txt</code> files from this repository.<br>
+   There are two ways to do it:
+   - Download the files directly from repository.<br><br>
+     <img width="2092" height="796" alt="image" src="https://res.cloudinary.com/dcvlvem8s/image/upload/v1770834199/Final_Repo_SC_lwvm0l.png" />
+     <hr>
+     Extract the files to the location where you want to keep your Java files.
 
-This repository contains a Java program designed for competitive programming. It provides a basic structure for efficiently handling input and output using custom classes (`InputReader` and `OutputWriter`) to streamline the problem-solving process during contests.
+   - Using Git (Recommended):<br>
+     1. Navigate to the folder where you want to keep your Java files and open the terminal in that folder.
+     2. Run the following commands.<br>
+        ```sh
+        git init
+        ```
+        ```sh
+        git clone https://github.com/debapriyo007/Taking-IO-Java.git
+        ```
 
-## Table of Contents
+2. Open that folder in Visual Studio Code.
+3. Open all the three files <code>Main.java</code>, <code>input.txt</code> and <code>output.txt</code> in the folder and keep selected <code>Main.java</code>.<br>
+   <img width="2408" height="650" alt="image" src="https://res.cloudinary.com/dcvlvem8s/image/upload/v1770833825/2nd_ddnxn8.png"/>
 
-| Coding Platform                                                                                       |  Accepted |
-|---------------------------------------------------------------------------------------------|-----------------|
-| ![CodeChef](https://img.shields.io/badge/CodeChef-%23964B00.svg?style=for-the-badge&logo=CodeChef&logoColor=white) | ✅ Yes          |
-| ![Codeforces](https://img.shields.io/badge/Codeforces-445f9d?style=for-the-badge&logo=Codeforces&logoColor=white) | ✅ Yes          |
+4. Right click on <code>Main.java</code> and select Split Left.<br>
+   <img width="2788" height="814" alt="image" src="https://res.cloudinary.com/dcvlvem8s/image/upload/v1770833825/2nd_ddnxn8.png" />
 
+5. Right click on <code>output.txt</code> and select Split Down.<br>
+   <img width="2778" height="1591" alt="image" src="https://res.cloudinary.com/dcvlvem8s/image/upload/v1770833826/3rd_rnfsfi.png" />
 
+6. Type your code in while loop of main function.<br>Example: Addtion of two numbers<br>
+   <img width="2782" height="1224" alt="image" src="https://res.cloudinary.com/dcvlvem8s/image/upload/v1770833826/Screenshot_2026-02-11_at_11.43.56_PM_jspjzr.png" />
 
+7. To run the file press <code>Ctrl+Shift+B</code>. You will get a dropdown at top. Select <code>compile and run</code>.<br>
+   <img width="2796" height="843" alt="image" src="https://res.cloudinary.com/dcvlvem8s/image/upload/v1770833826/Screenshot_2026-02-11_at_11.42.05_PM_yipilr.png" />
 
-## Features
+8. You will see the output in <code>output.txt</code> file.<br>
+   <img width="2790" height="1212" alt="image" src="https://res.cloudinary.com/dcvlvem8s/image/upload/v1770833826/4th_srm9tz.png" />
 
-- **Custom Input Handling:**
-  - `InputReader` supports efficient reading of various data types such as `int`, `long`, `double`, and strings.
-  - Supports reading lines for custom input scenarios.
+## Input / Output
+1. No need of <code>Scanner</code> class for I/O operations.
+2. Simply use <code>in.</code> for any input and <code>out.</code> for printing.
+3. Refer to the example shared above.
 
-- **Custom Output Handling:**
-  - `OutputWriter` enables fast and efficient output.
-  - Provides methods to write and writeLine for better control over the output.
-
-- **Error Handling:**
-  - Includes runtime exception handling for input/output operations.
-
-
-## Usage
-
-- Copy the bellow code and use it for competitive programming.
-- Accepted in any competitive programming platform.
-
-### Boilerplate Code
-
-```java
-import java.util.*;
-import java.io.*;
-
-public class CompetitiveProgrammingSolution {
-
-    static class InputReader {
-        private BufferedReader reader;
-        private StringTokenizer tokenizer;
-
-        public InputReader() {
-            reader = new BufferedReader(new InputStreamReader(System.in));
-        }
-
-        public String next() {
-            while (tokenizer == null || !tokenizer.hasMoreTokens()) {
-                try {
-                    tokenizer = new StringTokenizer(reader.readLine());
-                } catch (IOException e) {
-                    throw new RuntimeException("Error reading input", e);
-                }
-            }
-            return tokenizer.nextToken();
-        }
-
-        public int nextInt() {
-            return Integer.parseInt(next());
-        }
-
-        public long nextLong() {
-            return Long.parseLong(next());
-        }
-
-        public double nextDouble() {
-            return Double.parseDouble(next());
-        }
-
-        public String readLine() {
-            String inputLine = "";
-            try {
-                inputLine = reader.readLine();
-            } catch (IOException e) {
-                throw new RuntimeException("Error reading line", e);
-            }
-            return inputLine;
-        }
-    }
-
-    static class OutputWriter {
-        private BufferedWriter writer;
-
-        public OutputWriter() {
-            writer = new BufferedWriter(new OutputStreamWriter(System.out));
-        }
-
-        public void write(Object object) throws IOException {
-            writer.write(object.toString());
-        }
-
-        public void writeLine(Object object) throws IOException {
-            write(object);
-            writer.newLine();
-        }
-
-        public void close() throws IOException {
-            writer.close();
-        }
-    }
-
-    public static void main(String[] args) {
-        try {
-            InputReader inputReader = new InputReader();
-            OutputWriter outputWriter = new OutputWriter();
-
-            int T = inputReader.nextInt();
-            while (T -- > 0) {
-               
-               // Solve the problem here
-               // Call the solveProblem method.
-            }
-            outputWriter.close();
-        } catch (Exception e) {
-            System.err.println("Error during program execution: " + e.getMessage());
-        }
-    }
-
-}
-```
-
-1. **InputReader**: Handles reading input from the standard input.
-2. **OutputWriter**: Handles writing output to the standard output.
-3. **solveProblem**: The main logic for solving the competitive programming problem goes here.
-
-
-## Acknowledgments
-
-- Java community for the efficient `BufferedReader` and `BufferedWriter` classes.
-- Inspiration from competitive programming contests such as Codeforces, LeetCode, and HackerRank.
+---
 
 <p align="center">
     <img src="https://media2.giphy.com/media/3O5Ae20Rc0yuzlAroL/200w.gif?cid=82a1493bheh8va1kfb4wgpkqkineb4gznte8i2vwtdwpqg8g&ep=v1_gifs_related&rid=200w.gif&ct=s" alt="alt text">
 </p>
 
-
+   

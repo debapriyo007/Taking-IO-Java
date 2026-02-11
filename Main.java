@@ -11,6 +11,9 @@ public class Main{
 
     public static void solve() throws IOException {
         
+        int a = scanInt();
+        int b = scanInt();
+        print(a+b);
     }
 
 
