@@ -1,8 +1,6 @@
 ## About this Repository
-- This Main is accepted on both <b>Codeforces</b> and <b>Codechef</b>.
+- This `Main.java` is accepted on both <b>Codeforces</b> and <b>Codechef</b>.
 - It is designed to be simple and easy to use.
-- It uses <code>BufferedReader</code> and <code>PrintWriter</code> for fast I/O operations.
-- It is structured to handle multiple test cases efficiently.
 - It includes a sample code for addition of two numbers to demonstrate how to use the Main.
 
 ## Requirements
@@ -44,7 +42,7 @@
    <img width="2782" height="1224" alt="image" src="https://res.cloudinary.com/dcvlvem8s/image/upload/v1770833826/Screenshot_2026-02-11_at_11.43.56_PM_jspjzr.png" />
 
 7. To run the file press <code>Ctrl+Shift+B</code>. You will get a dropdown at top. Select <code>compile and run</code>.<br>
-   <img width="2796" height="843" alt="image" src="https://res.cloudinary.com/dcvlvem8s/image/upload/v1770833826/Screenshot_2026-02-11_at_11.42.05_PM_yipilr.png" />
+   <img width="2796" height="843" alt="image" src="https://res.cloudinary.com/dcvlvem8s/image/upload/v1770834815/Screenshot_2026-02-12_at_12.03.25_AM_nqsd4v.png" />
 
 8. You will see the output in <code>output.txt</code> file.<br>
    <img width="2790" height="1212" alt="image" src="https://res.cloudinary.com/dcvlvem8s/image/upload/v1770833826/4th_srm9tz.png" />
